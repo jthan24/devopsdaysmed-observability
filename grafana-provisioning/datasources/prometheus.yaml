@@ -1,0 +1,10 @@
+apiVersion: 1
+
+datasources:
+  - name: prometheus
+    type: prometheus
+    uid: prometheus_uid_for_dashboards
+    access: proxy
+    url: http://192.168.xx.xxx:9090
+    jsonData:
+      manageAlerts: false
